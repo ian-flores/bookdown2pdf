@@ -1,0 +1,78 @@
+<div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Forecasting: Principles and Practice</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-"><div id="header">
+<h1 class="title">Forecasting: Principles and Practice</h1>
+<p class="author"><em>Rob J Hyndman and George Athanasopoulos</em></p>
+<address class="author_afil">
+Monash University, Australia<br>
+</address>
+</div>
+<div id="preface" class="section level1 unnumbered">
+<h1>Preface</h1>
+<p style="float:right; width:50%; margin-left:20px;">
+<img src="fpp2_cover.jpg" width="100%"><a href="buy-a-print-or-downloadable-version.html">
+<button type="submit" class="btn btn-success btn-lg">Buy a print or downloadable version</button>
+</a>
+</p>
+<p>Welcome to our online textbook on forecasting.</p>
+<p>This textbook is intended to provide a comprehensive introduction to forecasting methods and to present enough information about each method for readers to be able to use them sensibly. We don’t attempt to give a thorough discussion of the theoretical details behind each method, although the references at the end of each chapter will fill in many of those details.</p>
+<p>The book is written for three audiences: (1) people finding themselves doing forecasting in business when they may not have had any formal training in the area; (2) undergraduate students studying business; (3) MBA students doing a forecasting elective. We use it ourselves for a third-year subject for students undertaking a Bachelor of Commerce or a Bachelor of Business degree at Monash University, Australia.</p>
+<p>For most sections, we only assume that readers are familiar with introductory statistics, and with high-school algebra. There are a couple of sections that also require knowledge of matrices, but these are flagged.</p>
+<p>At the end of each chapter we provide a list of “further reading”. In general, these lists comprise suggested textbooks that provide a more advanced or detailed treatment of the subject. Where there is no suitable textbook, we suggest journal articles that provide more information.</p>
+<p>We use R throughout the book and we intend students to learn how to forecast with R. R is free and available on almost every operating system. It is a wonderful tool for all statistical analysis, not just for forecasting. See the <a href="appendix-using-r.html#appendix-using-r">Using R appendix</a> for instructions on installing and using R.</p>
+<p>All R examples in the book assume you have loaded the <strong>fpp2</strong> package, available on CRAN, using <code>library(fpp2)</code>. This will automatically load several other packages including <strong>forecast</strong> and <strong>ggplot2</strong>, as well as all the data used in the book. We have used v2.3 of the <strong>fpp2</strong> package and v8.7 of the <strong>forecast</strong> package in preparing this book. These can be installed from CRAN in the usual way. Earlier versions of the packages will not necessarily give the same results as those shown in this book.</p>
+<p>We will use the <strong>ggplot2</strong> package for all graphics. If you want to learn how to modify the graphs, or create your own ggplot2 graphics that are different from the examples shown in this book, please either read the ggplot2 book <span class="citation">(Wickham, <a href="#ref-ggplot2">2016</a>)</span>, or do the <a href="http://bit.ly/dcggplot2">ggplot2 course</a> on the DataCamp online learning platform.</p>
+<p>There is also a <a href="http://bit.ly/dcforecasting">DataCamp course based on this book</a> which provides an introduction to some of the ideas in Chapters 2, 3, 7 and 8, plus a brief glimpse at a few of the topics in Chapters 9 and 11.</p>
+<p>The book is different from other forecasting textbooks in several ways.</p>
+<ul>
+<li>It is free and online, making it accessible to a wide audience.</li>
+<li>It uses R, which is free, open-source, and extremely powerful software.</li>
+<li>The online version is continuously updated. You don’t have to wait until the next edition for errors to be removed or new methods to be discussed. We will update the book frequently.</li>
+<li>There are dozens of real data examples taken from our own consulting practice. We have worked with hundreds of businesses and organisations helping them with forecasting issues, and this experience has contributed directly to many of the examples given here, as well as guiding our general philosophy of forecasting.</li>
+<li>We emphasise graphical methods more than most forecasters. We use graphs to explore the data, analyse the validity of the models fitted and present the forecasting results.</li>
+</ul>
+<div id="changes-in-the-second-edition" class="section level3 unnumbered">
+<h3>Changes in the second edition</h3>
+<p>The most important change in edition 2 of the book is that we have restricted our focus to <em>time series forecasting</em>. That is, we no longer consider the problem of cross-sectional prediction. Instead, all forecasting in this book concerns prediction of data at future times using observations collected in the past.</p>
+<p>We have also simplified the chapter on exponential smoothing, and added new chapters on dynamic regression forecasting, hierarchical forecasting and practical forecasting issues. We have added new material on combining forecasts, handling complicated seasonality patterns, dealing with hourly, daily and weekly data, forecasting count time series, and we have many new examples. We have also revised all existing chapters to bring them up-to-date with the latest research, and we have carefully gone through every chapter to improve the explanations where possible, to add newer references, to add more exercises, and to make the R code simpler.</p>
+<p>Helpful readers of the earlier versions of the book let us know of any typos or errors they had found. These were updated immediately online. No doubt we have introduced some new mistakes, and we will correct them online as soon as they are spotted. Please continue to <a href="http://bit.ly/fpptypo">let us know</a> about such things.</p>
+<p>If you have questions about using the R packages discussed in this book, or about forecasting in general, please ask on the <a href="http://rstd.io/forecast-package">RStudio Community website</a>.</p>
+<p> </p>
+<p>Happy forecasting!</p>
+<p>Rob J Hyndman and George Athanasopoulos</p>
+<p>April 2018</p>
+<hr>
+<p>To cite the online version of this book, please use the following:</p>
+<blockquote>
+<p>Hyndman, R.J., &amp; Athanasopoulos, G. (2018) <em>Forecasting: principles and practice</em>, 2nd edition, OTexts: Melbourne, Australia. OTexts.com/fpp2. Accessed on <code>&lt;current date&gt;</code>.</p>
+</blockquote>
+<p> </p>
+<blockquote>
+<p>This online version of the book was last updated on 2 August 2019.<br>
+The print version of the book (<a href="/fpp2/buy-a-print-or-downloadable-version.html">available from Amazon and Google</a>) was last updated on 8 May 2018.</p>
+</blockquote>
+<hr>
+</div>
+</div>
+<h3>Bibliography</h3>
+<div id="refs" class="references">
+<div id="ref-ggplot2">
+<p>Wickham, H. (2016). <em>ggplot2: Elegant graphics for data analysis</em> (2nd ed). Springer.  <a href="http://amzn.com/331924275X?tag=otexts-20" class="uri">[Amazon]</a></p>
+</div>
+</div>
+            </section>
+</div>
+        </div>
+      </div>
+
+<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
